@@ -26,7 +26,7 @@ country_list.forEach((country) => {
 });
 
 // Fetch data
-function fetchData(user_country) {
+function fetchData(user_country = 'Ukraine') {
   (app_data = []),
     (cases_list = []),
     (recovered_list = []),
