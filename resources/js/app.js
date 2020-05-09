@@ -17,13 +17,13 @@ let app_data = [],
   dates = [];
 
 // Get user's country
-let country_code = geoplugin_countryCode();
+/* let country_code = geoplugin_countryCode();
 let user_country;
 country_list.forEach((country) => {
   if (country.code == country_code) {
     user_country = country.name;
   }
-});
+}); */
 
 // Fetch data
 function fetchData(user_country = 'Ukraine') {
