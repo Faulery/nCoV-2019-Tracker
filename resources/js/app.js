@@ -34,7 +34,7 @@ function fetchData(user_country) {
     (dates = []);
     const default_user_country = 'Ukraine'
   fetch(
-    `https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_by_days_by_country.php?country=${user_country || default_user_country}`,
+    `https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_by_days_by_country.php?country=${user_country = user_country ? user_country : default_user_country}`,
     {
       method: 'GET',
       headers: {
