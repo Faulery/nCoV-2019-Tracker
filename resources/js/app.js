@@ -63,7 +63,7 @@ function fetchData(user_country = 'Ukraine') {
     });
 }
 
-fetchData(user_country);
+fetchData();
 
 function updateUI() {
   updateStats();
