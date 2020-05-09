@@ -26,12 +26,13 @@ country_list.forEach((country) => {
 }); */
 
 // Fetch data
-function fetchData(user_country = 'Ukraine') {
+function fetchData() {
   (app_data = []),
     (cases_list = []),
     (recovered_list = []),
     (deaths_list = []),
     (dates = []);
+    const user_country = 'Ukraine'
   fetch(
     `https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_by_days_by_country.php?country=${user_country}`,
     {
